@@ -90,8 +90,8 @@ function Portfolio() {
           </div>
         </div> */}
         {/* Strat contact */}
-        <div className=' py-4 space-y-1'>
-          <p className=" text-lg font-bold underline text-left text-gray-900 dark:text-gray-50">
+        <div className=' py-4 space-y-1 text-gray-900 dark:text-gray-50'>
+          <p className=" text-lg font-bold underline text-left ">
             {t('contact')}
           </p>
           <p className="flex items-center gap-2 text-sm">
