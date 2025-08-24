@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import Profile from '../assets/image/profile.jpg';
+import Profile from '../assets/image/smart.png';
 import '../App.css';
-// import { FaPhone } from "react-icons/fa6";
-// import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 // import { IoPerson } from "react-icons/io5";
 // import { MdHomeWork } from "react-icons/md";
 // import { CgDetailsLess } from "react-icons/cg";
@@ -10,9 +10,9 @@ import '../App.css';
 import calculateMonths from '../handle/calculateMonths';
 // import { PiBagSimpleDuotone } from "react-icons/pi";
 // import { GiComputing } from "react-icons/gi";
-import { IoLibrary } from "react-icons/io5";
-import { FaFileCode } from "react-icons/fa";
-import { FaTools } from "react-icons/fa";
+// import { IoLibrary } from "react-icons/io5";
+// import { FaFileCode } from "react-icons/fa";
+// import { FaTools } from "react-icons/fa";
 import { PiToolboxFill } from "react-icons/pi";
 // import { SiHtml5 } from "react-icons/si";
 // import { SiCss3 } from "react-icons/si";
@@ -33,10 +33,12 @@ import {
   TimelineTime,
   TimelineTitle,
 } from "flowbite-react";
+import ListSkill from "./skill";
 
 
 function Portfolio() {
   const { t } = useTranslation();
+  const character = ["char1", "char2", "char3", "char4", "char5", "char6"]
 
 
   return (
@@ -87,6 +89,21 @@ function Portfolio() {
             </div>
           </div>
         </div> */}
+        {/* Strat contact */}
+        <div className=' py-4 space-y-1'>
+          <p className=" text-lg font-bold underline text-left text-gray-900 dark:text-gray-50">
+            {t('contact')}
+          </p>
+          <p className="flex items-center gap-2 text-sm">
+            <FaPhone />
+            093-263-2562
+          </p>
+          <p className="flex items-center gap-2 text-sm">
+            <MdEmail />
+            up.patihan@gmail.com
+          </p>
+        </div>
+        {/* End Hiscontacttory */}
 
         {/* Strat History */}
         <div className='py-5 '>
@@ -106,19 +123,19 @@ function Portfolio() {
           </p>
           <Timeline>
             <TimelineItem>
-              <TimelinePoint className='' />
+              <TimelinePoint className='-ml-7.5' />
               <TimelineContent >
-                <TimelineTime  className='text-sm text-gray-700 dark:text-gray-200'>{t('exp3')}
+                <TimelineTime className='text-sm text-gray-700 dark:text-gray-200'>{t('exp3')}
                   <span className="ml-3 relative -top-0.3 inline-flex items-center  rounded-lg bg-indigo-400/30 dark:bg-indigo-900 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:text-indigo-50 inset-ring inset-ring-indigo-400/30">{calculateMonths()} {t('month')}</span>
                 </TimelineTime>
-                <TimelineTitle  className=' text-md ext-gray-900 dark:text-gray-50'>{t('exp name3')}</TimelineTitle>
+                <TimelineTitle className=' text-md ext-gray-900 dark:text-gray-50'>{t('exp name3')}</TimelineTitle>
                 <TimelineBody className='text-sm text-gray-700 dark:text-gray-200'>
                   {t('exp detail3')}
                 </TimelineBody>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem className='-mt-5'>
-              <TimelinePoint className='' />
+              <TimelinePoint className='-ml-7.5' />
               <TimelineContent>
                 <TimelineTime className='text-sm text-gray-700 dark:text-gray-200'>{t('exp2')}
                   <span className="ml-3 relative -top-0.3 inline-flex items-center  rounded-lg bg-indigo-400/30 dark:bg-indigo-900 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:text-indigo-50 inset-ring inset-ring-indigo-400/30">4 {t('month')}</span>
@@ -130,7 +147,7 @@ function Portfolio() {
               </TimelineContent>
             </TimelineItem>
             <TimelineItem className='-mt-5'>
-              <TimelinePoint className='' />
+              <TimelinePoint className='-ml-7.5' />
               <TimelineContent>
                 <TimelineTime className='text-sm text-gray-700 dark:text-gray-200'>{t('exp1')}
                   <span className="ml-3 relative -top-0.3 inline-flex items-center  rounded-lg bg-indigo-400/30 dark:bg-indigo-900 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:text-indigo-50 inset-ring inset-ring-indigo-400/30">4 {t('month')}</span>
@@ -168,136 +185,7 @@ function Portfolio() {
           <p className="text-lg font-bold underline text-left mt-2 text-gray-900 dark:text-gray-50">
             {t('hard skill')}
           </p>
-          <dl className="text-gray-900 dark:text-gray-50">
-            <dt className="flex items-center gap-2 text-md">
-              <FaFileCode className='text-sm'/>
-              {t('code')}
-            </dt>
-            <dd className="ml-4 text-sm">
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  HTML
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  CSS
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  JavaScript
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  TypeScript
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  PHP
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Python
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  C
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  SQL
-                </li>
-              </ul>
-            </dd>
-            <dt className="flex items-center gap-2 text-md pt-1">
-              <IoLibrary className='text-md'/>
-              {t('library')}
-            </dt>
-            <dd className="ml-4 text-sm">
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Laravel
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  React
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Next.js
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Bootstrap
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Tailwind CSS
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  jQuery
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  Axios
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  FastAPI
-                </li>
-              </ul>
-            </dd>
-            <dt className="flex items-center gap-2 text-md pt-1">
-              <FaTools className='text-sm'/>
-              {t('tool')}
-            </dt>
-            <dd className="ml-4 text-sm">
-              <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                <li className="flex items-center">
-                  <LuDot className="text-xl" />
-                  Visual Studio Code
-                </li>
-                <li className="flex items-center">
-                  <LuDot className="text-xl" />
-                  Pycharm
-                </li>
-                <li className="flex items-center">
-                  <LuDot className="text-xl" />
-                  Postman
-                </li>
-                <li className="flex items-center">
-                  <LuDot className="text-xl" />
-                  MySql
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  MariaDB
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  Postgresql
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  Oracle
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  DBeaver
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  BloomRPC
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  Git
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  Ubuntu
-                </li>
-                <li className="flex items-center"><LuDot className="text-xl" />
-                  Arduino
-                </li>
-              </ul>
-            </dd>
-          </dl>
+          <ListSkill />
         </div>
         {/* End Skill */}
 
@@ -309,31 +197,12 @@ function Portfolio() {
           <dt className=" text-gray-900 dark:text-gray-50">
             <dd className="ml-4 text-sm">
               <ul className="space-y-1">
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char1')}
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char2')}
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char3')}
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char4')}
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char5')}
-                </li>
-                <li className="flex items-center gap-1">
-                  <LuDot className="text-xl" />
-                  {t('char6')}
-                </li>
-
+                {character.map((key, index) => (
+                  <li key={index} className="flex items-center gap-1">
+                    <LuDot className="text-xl" />
+                    {t(key)}
+                  </li>
+                ))}
               </ul>
             </dd>
           </dt>

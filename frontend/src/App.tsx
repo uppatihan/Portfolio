@@ -1,7 +1,7 @@
 import Theme from './component/theme'
 import Language from './component/language'
 import Portfolio from './pages/portfolio'
-import Signature from './pages/signature'
+// import Signature from './pages/signature'
 
 function App() {
 

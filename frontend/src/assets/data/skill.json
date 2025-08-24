@@ -1,0 +1,37 @@
+{
+  "programming": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "Python",
+    "C",
+    "SQL"
+  ],
+  "library": [
+    "Laravel",
+    "React",
+    "Next.js",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Flowbite",
+    "jQuery",
+    "Axios",
+    "FastAPI"
+  ],
+  "tool": [
+    "Visual Studio Code",
+    "Pycharm",
+    "Postman",
+    "MySql",
+    "MariaDB",
+    "Postgresql",
+    "DBeaver",
+    "BloomRPC",
+    "Git",
+    "Ubuntu",
+    "Arduino",
+    "Google AppScript",
+    "Firebase"
+  ]
+}
