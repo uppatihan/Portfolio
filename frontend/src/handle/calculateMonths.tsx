@@ -1,7 +1,7 @@
 // ฟังก์ชันคำนวณจำนวนเดือน
 function calculateMonths() {
   const today = new Date();
-  const endMonth = today.getMonth() + 1; // เดือนปัจจุบัน (JS เริ่ม 0)
+  const endMonth = today.getMonth() + 1; 
   const endYear = today.getFullYear();    // ปีปัจจุบัน (ค.ศ.)
 
   // แปลง startYear จาก พ.ศ. เป็น ค.ศ.

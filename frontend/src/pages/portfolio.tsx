@@ -3,26 +3,8 @@ import Profile from '../assets/image/smart.png';
 import '../App.css';
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-// import { IoPerson } from "react-icons/io5";
-// import { MdHomeWork } from "react-icons/md";
-// import { CgDetailsLess } from "react-icons/cg";
-// import { CgDetailsMore } from "react-icons/cg";
 import calculateMonths from '../handle/calculateMonths';
-// import { PiBagSimpleDuotone } from "react-icons/pi";
-// import { GiComputing } from "react-icons/gi";
-// import { IoLibrary } from "react-icons/io5";
-// import { FaFileCode } from "react-icons/fa";
-// import { FaTools } from "react-icons/fa";
 import { PiToolboxFill } from "react-icons/pi";
-// import { SiHtml5 } from "react-icons/si";
-// import { SiCss3 } from "react-icons/si";
-// import { SiJavascript } from "react-icons/si";
-// import { SiTypescript } from "react-icons/si";
-// import { SiPhp } from "react-icons/si";
-// import { SiPython } from "react-icons/si";
-// import { PiFileSqlFill } from "react-icons/pi";
-// import { GoDotFill } from "react-icons/go";
-// import { BsDot } from "react-icons/bs";
 import { LuDot } from "react-icons/lu";
 import {
   Timeline,
